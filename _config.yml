@@ -1,0 +1,45 @@
+title: Vera Nesdvadbova Github pages
+email: vnesvadbova@gmail.com
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-target-blank
+  - jekyll/tagging
+  - jekyll-redirect-from
+  - jekyll-time-to-read
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - /vendor/
+
+seo:
+  type: website
+
+target-blank:
+   noopener: false
+   noreferrer: false
+
+
+# RSS feed details
+name: 
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+
+timezone: Europe/Prague
+
+defaults:
+# Don't include documents in assets in the sitemap
+- scope:
+    path:            assets/**
+  values:
+    sitemap:         false
+

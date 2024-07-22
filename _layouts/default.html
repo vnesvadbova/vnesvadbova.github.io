@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+
+
+  <head>
+    {% include google-analytics.html %}
+    {% include head.html %}
+  </head>
+  <body>
+    
+      <main class="page-wrapper">
+      {% include header.html %}
+      {{ content }}
+      </main>
+      {% include footer.html %}
+    
+      <!-- Back to top button -->
+      <a href="#top" class="btn-scroll-top" data-scroll>
+        <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+        <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+      </a>
+
+      {% include footer-js.html %}
+  </body>
+</html>

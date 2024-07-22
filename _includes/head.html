@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+
+{% seo %}
+
+<!-- alternative language versions-->
+{% for item in page.altlanguage %} 
+<link rel="alternate" hreflang="{{ item[0] }}" href="{{ site.url }}{{ site.baseurl }}{{ item[1].url }}" />       
+{% endfor %}  
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.altlanguage.en.url }}"/> 
+
+<!-- Viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Vendor Styles -->
+<link rel="stylesheet" media="screen" href="{{ site.url }}{{ site.baseurl }}/assets/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" media="screen" href="{{ site.url }}{{ site.baseurl }}/assets/vendor/swiper/swiper-bundle.min.css">
+
+<!-- Main Theme Styles + Bootstrap -->
+<link rel="stylesheet" media="screen" href="{{ site.url }}{{ site.baseurl }}/assets/css/theme.min.css">
+
